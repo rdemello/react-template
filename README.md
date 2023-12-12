@@ -22,8 +22,8 @@ server:build  | babel --verbose --out-dir dist --only 'src/server.js,src/lib/' s
 client:build  | vite build | Builds the react app
 build  |  npm run server:build && npm run client:build  | Builds the combined package
 preview  |  vite preview  | Runs the built app from the dist folder
-test  |  prettier --check . && eslint .  | Runs a check for prettier and eslint
-clean  |  prettier --write .   | Runs prettier across files based on selected formatting
+test  |  prettier --check . && eslint  | Runs a check for prettier and eslint
+clean  |  prettier --write   | Runs prettier across files based on selected formatting
 
 
 
