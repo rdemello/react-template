@@ -21,7 +21,7 @@ server:dev  |  nodemon src/server.cjs  | Runs the server file to handle requests
 server:build  | babel --verbose --out-dir dist --only 'src/server.js,src/lib/' src  | Builds the server files
 client:build  | vite build | Builds the react app
 build  |  npm run server:build && npm run client:build  | Builds the combined package
-preview  |  vite preview  | runs the built app from the dist file
+preview  |  vite preview  | Runs the built app from the dist folder
 test  |  prettier --check . && eslint .  | Runs a check for prettier and eslint
 clean  |  prettier --write .   | Runs prettier across files based on selected formatting
 
