@@ -3,6 +3,13 @@
 This template provides a minimal setup to get React working in Vite with some ESLint rules and a Prettier config. To start, copy template and run `npm install` to setup included packages.
 
 ## Included Packages
++ Express - to handle the server
++ nodemon - to run the server file with live changes
++ prettier - used to format and clean up code for consistency and legibility
++ react - as it's react
++ react-router-dom - to handle nagivation
++ zustand - to handle state around the app
++ vite - for speed over webpack
 
 ## Commands
 
