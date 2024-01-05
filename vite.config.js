@@ -6,6 +6,7 @@ const { PORT = 3001 } = process.env;
 // https://vitejs.dev/config/
 export default defineConfig({
     plugins: [react()],
+    // base:'/',
     server: {
         proxy: {
             '/api': {
@@ -15,6 +16,6 @@ export default defineConfig({
         },
     },
     build: {
-        outDir: 'dist/app',
+        outDir: 'dist',
     },
 });
