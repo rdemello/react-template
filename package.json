@@ -6,19 +6,20 @@
   "scripts": {
     "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
     "client:dev": "vite",
-    "server:dev": "nodemon src/server.cjs",
-    "server:build": "babel --verbose --out-dir dist --only 'src/server.js,src/lib/' src",
-    "client:build": "vite build",
-    "build": "npm run server:build && npm run client:build",
+    "server:dev": "nodemon server.cjs",
+    "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
+    "preview": "nodemon server.cjs",
     "test": "prettier --check . && eslint .",
-    "clean": "prettier --write ."
+    "clean": "prettier --write .",
+    "serve": "node server.cjs"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
     "concurrently": "^8.2.1",
+    "cors": "^2.8.5",
     "express": "^4.18.2",
+    "immer": "^10.0.3",
     "nodemon": "^3.0.1",
     "prettier": "^3.0.2",
     "react": "^18.2.0",
