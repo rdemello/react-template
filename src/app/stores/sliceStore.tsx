@@ -1,4 +1,5 @@
-import { StateCreator } from 'zustand'
+import { StateCreator } from 'zustand';
+import 'zustand/middleware/immer';
 
 type ImmerStateCreator<T> = StateCreator<
   T,

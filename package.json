@@ -6,13 +6,13 @@
   "scripts": {
     "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
     "client:dev": "vite",
-    "server:dev": "nodemon server.cjs",
+    "server:dev": "nodemon server.mjs",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "nodemon server.cjs",
+    "preview": "nodemon server.mjs",
     "test": "prettier --check . && eslint .",
     "clean": "prettier --write .",
-    "serve": "node server.cjs"
+    "serve": "node server.mjs"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
@@ -28,6 +28,7 @@
     "zustand": "^4.4.1"
   },
   "devDependencies": {
+    "@types/node": "^20.12.7",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.4.1",

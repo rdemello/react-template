@@ -4,7 +4,6 @@ import react from '@vitejs/plugin-react';
 const { PORT = 3002 } = process.env;
 const ASSET_URL = process.env.ASSET_URL || '';
 
-// https://vitejs.dev/config/
 export default defineConfig({
     plugins: [react()],
     server: {
@@ -19,5 +18,5 @@ export default defineConfig({
         outDir: 'dist',
     },
     base: `${ASSET_URL}/`,
-	// base:'./'
+
 });
